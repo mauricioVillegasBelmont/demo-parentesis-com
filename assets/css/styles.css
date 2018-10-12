@@ -1,0 +1,338 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+  height: 100%;
+  padding: 1rem;
+}
+/* nav */
+.navbar{
+  padding: 0;
+}
+.navbar{
+  flex-direction: column;
+}
+.main-nav{
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 3.5rem;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.main-nav img{
+  height: 55px;
+  max-height: 100%;
+}
+.sub-nav{
+  min-width: 100%;
+  padding: 0.5rem 1rem;
+  height: 2.5rem;
+  max-width: 100%;
+}
+
+/* custom icons */
+.custom-icons{
+  padding: 0;
+  position: relative;
+  list-style: none;
+  align-items:baseline;
+  height: 100%;
+}
+.main-nav a{
+  padding: 0;
+}
+.main-nav .menu-btn{
+  font-size: 1.7rem;
+}
+.sm-icons a{
+  margin: 0 0 0 1.2rem;
+}
+.main-nav .custom-icons a{
+  min-width: 2.5rem;
+  height: 100%;
+  margin: 0 0 0 0.7rem;
+}
+.sm-icons{
+  width: 100%;
+}
+.sm-icons a{
+  min-width: 1.5rem;
+  height: 1.5rem;
+}
+.custom-icons a{
+  padding: 0;
+  position: relative;
+}
+.custom-icons p{
+  font-size: 70%;
+  margin-bottom: 0;
+}
+.ci::before{
+  content: '#';
+  /* background-color: blue; */
+  /* color: red; */
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+  display:block;
+}
+.main-nav .ci::before{
+  font-size:   2.5rem;
+  line-height: 2.5rem;
+}
+.sm-icons .ci::before{
+  font-size:   1.5rem;
+  line-height: 1.5rem;
+}
+a:hover .ci::before, a:visited .ci::before{
+  background-position: bottom;
+}
+.ci-youtube::before{
+  background-image: url(../img/sm-yt.png);
+}
+.ci-facebook::before{
+  background-image: url(../img/sm-fb.png);
+}
+.ci-twitter::before{
+  background-image: url(../img/sm-tw.png);
+}
+.ci-googleplus::before{
+  background-image: url(../img/sm-gp.png);
+}
+.ci-instagram::before{
+  background-image: url(../img/sm-ig.png);
+}
+/* search */
+
+
+.input-group-prepend{
+  padding: 5px 0.5rem;
+  height: 26px;
+  font-size: 20px;
+}
+.input-group-prepend:focus, .input-group-prepend:hover{
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+.form-control{
+  color: #fff;
+  height: 26px !important;
+  padding: 0;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgba(255,255,255,0.5) !important;
+  border-radius: 0;
+  transition: width 1s ease;
+  width: 0;
+
+}
+.form-control:focus{
+  width: 250px !important;
+  padding: 5px 12px;
+  color: #fff;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgba(255,255,255,0.5) !important;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow:none;
+  border-radius: 5px 0.5rem 0.5rem 5px;
+}
+.form-control::placeholder{
+  color: #fff;
+}
+
+
+
+
+/* breadcumbs */
+.breadcrumb{
+  font-size: 80%;
+  height: 5vh;
+  background-color: transparent;
+  margin-top: 100px;
+}
+/* main */
+  /* cover */
+.cover{
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.cover img{
+    width: auto;
+    height: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* header */
+
+.article-header h1{
+  font-weight:800;
+}
+.article-header h2{
+  font-weight:300;
+  font-style: italic;
+}
+.article-header .post-data{
+  margin-top: 1.5rem;
+  width: 50%;
+  max-width: 300px;
+}
+.article-header .post-author-avatar{
+  width: 75px;
+  height: auto;
+  float: left;
+  margin-right: 1rem;
+}
+.article-header .post-author{
+  font-weight:600;
+  margin-bottom: 0;
+}
+.article-header .post-date{
+  font-weight:300;
+
+}
+
+.rating-table{}
+.rating-list{
+  position: relative;
+  width: 100%;
+}
+.rating-list h6{
+  font-weight: bold;
+}
+.rating-list ul{
+  list-style: none;
+  font-weight: 300;
+  font-size: 80%;
+}
+.rating-list ul .fa{
+  font-size: 2rem;
+}
+.fa-li{text-align: right;
+  left: -3em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rating-list ul li{
+  padding-left: 0.5rem;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+.rating-list .nice li {
+
+}
+.rating-list .amiss li{
+}
+/* .rating-list .nice{}
+.rating-list .amiss{} */
+.raiting-valoration{
+  position: absolute;
+  right: 0;
+  border-radius: 1rem 1rem 0 0;
+  width: 50%;
+  max-width: 150px;
+  height: 160px;
+  top:   -159px;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 400%;
+  font-weight: 600;
+}
+
+/* article */
+.article-body{
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.article-body h1{font-weight: 800; font-style: normal;}
+.article-body h2{font-weight: 600; font-style: normal;}
+.article-body h3{font-weight: 400; font-style: normal;}
+.article-body h4{font-weight: 300; font-style: normal;}
+.article-body h5{font-weight: 400; font-style: normal;}
+.article-body h6{font-weight: 300; font-style: normal;}
+.article-body ins{
+  float: left;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  text-decoration: none;
+  margin-right: 0.2rem;
+  font-weight: 600;
+}
+.photo-wrapper{
+  padding-right: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+  font-weight:300;
+  font-style: italic;
+  font-size: 80%;
+}
+.photo-wrapper .picture{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* max-height: 800px; */
+  padding-bottom: 1rem;
+}
+
+.photo-wrapper .pic-footer{
+
+}
+/* modules */
+.globe-title{
+  position: relative;
+  border-radius: 1rem 1rem 1rem 0;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.globe-title::after{
+  position: absolute;
+  bottom: -1.3rem;
+  left: 0;
+  content: '.';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1.3rem 1.3rem 0 0;
+}
+
+.globe-title h4::before{
+  content: "( "
+}
+.globe-title h4::after{
+  content: " )"
+}
+
+
+/* asides */
+
+.card a:hover{
+  text-decoration: none;
+}
+.card .card-body{
+  font-size: 80%;
+}
+
+.shadow{
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+  -moz-   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+          box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}

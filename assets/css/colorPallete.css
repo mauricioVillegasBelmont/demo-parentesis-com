@@ -1,0 +1,95 @@
+body{
+  background-color: #F5F5F5;
+  color: #232323;
+}
+.videogames .breadcrumb a{
+  color: #F6851F;
+}
+.videogames .article-body h1,
+.videogames .article-body h2,
+.videogames .article-body h3,
+.videogames .article-body h4,
+.videogames .article-body h5,
+.videogames .article-body h6{
+  color: #F6851F;
+}
+.navbar, .navbar a{
+  color: #fff;
+}
+.videogames .article-header .wrapper, .videogames .globe-title, .videogames .sub-nav{
+  background-color: #F6851F;
+
+}
+.videogames .globe-title::after{
+  border-color: #F6851F transparent transparent transparent;
+}
+.videogames .card a:hover h5,.navbar a:hover{
+  color:#F6851F;
+}
+.videogames .raiting-valoration{
+  background-image: url(../img/videogames-rating.png);
+}
+.videogames .ci-suscribe::before{
+  background-image: url(../img/vg-suscribe.png);
+}
+.videogames .ci-newsletter::before{
+  background-image: url(../img/vg-newsletter.png);
+}
+.videogames .ci-latest::before{
+  background-image: url(../img/vg-latest.png);
+}
+.videogames .ci-trends::before{
+  background-image: url(../img/vg-trends.png);
+}
+.videogames .sub-nav{
+
+}
+
+
+.raiting-valoration{
+  color: #232323 !important;
+}
+
+.article-body{
+  background-color: #fff;
+}
+/* modules */
+.main-nav, .rating-table .wrapper, .raiting-valoration{
+  background-color: #232323;
+  color: #fff;
+}
+.rating-list .nice h6, .rating-list .nice .fa {
+  color: #8DC63F;
+}
+.rating-list .amiss h6, .rating-list .amiss .fa{
+  color: #C93041;
+}
+.article-header{
+  color: #fff;
+}
+
+.article{
+  background-color: #fff;
+}
+.photo-wrapper{
+  /* background-color: #F5F5F5; */
+}
+
+.globe-title::after{
+  color: transparent ;
+
+}
+.card a{
+  color:#fff;
+}
+.card{
+  color: #fff;
+  background-color: #232323;
+  border: none;
+}
+/* svg items */
+
+/* sm yt */
+.wrapIcon{opacity:0.5;}
+.smIcon{fill:#FFFFFF;}
+.smIcon:hover{fill:#FFFFFF;}
